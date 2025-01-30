@@ -56,12 +56,15 @@ public class Stack {
                 s.push(a);
             }
 //            s.push(6); // should give stack full statement
-            while (!s.isEmpty()) {
-                System.out.println("Peek is : " + s.peek());
-                System.out.println("Popping : " + s.pop());
-            }
+//            while (!s.isEmpty()) {
+//                System.out.println("Peek is : " + s.peek());
+//                System.out.println("Popping : " + s.pop());
+//            }
 //            s.pop(); // should give stack is empty statement
 
+            System.out.println("Peek is : " + s.peek());
+            System.out.println("Popping : " + s.pop());
+            System.out.println("Peek is : " + s.peek());
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
