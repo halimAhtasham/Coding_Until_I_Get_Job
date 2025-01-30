@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Stack {
     public int top;
     public int size;
@@ -40,22 +42,29 @@ public class Stack {
     public static void main(String[] args) {
 
         try {
-            Stack s = new Stack(5);
-            s.push(1);
-            s.push(2);
-            s.push(3);
-            s.push(4);
-            s.push(5);
-//            s.push(6);
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter your stack size: ");
+            int StackSize = sc.nextInt();
+            Stack s = new Stack(StackSize);
+
+            while(true){
+                System.out.println("Enter stack element: (press -1 to exit): ");
+                int a = sc.nextInt();
+                if(a == -1){
+                    break;
+                }
+                s.push(a);
+            }
+//            s.push(6); // should give stack full statement
             while (!s.isEmpty()) {
                 System.out.println("Peek is : " + s.peek());
                 System.out.println("Popping : " + s.pop());
             }
-            s.pop();
+//            s.pop(); // should give stack is empty statement
 
         }
         catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }
