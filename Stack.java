@@ -60,7 +60,7 @@ public class Stack {
 //                System.out.println("Peek is : " + s.peek());
 //                System.out.println("Popping : " + s.pop());
 //            }
-//            s.pop(); // should give stack is empty statement
+//            s.pop();
 
             System.out.println("Peek is : " + s.peek());
             System.out.println("Popping : " + s.pop());
