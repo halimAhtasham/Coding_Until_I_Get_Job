@@ -55,6 +55,7 @@ public class Stack {
                 }
                 s.push(a);
             }
+            sc.close();
 //            s.push(6); // should give stack full statement
 //            while (!s.isEmpty()) {
 //                System.out.println("Peek is : " + s.peek());
