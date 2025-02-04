@@ -5,7 +5,6 @@ public class Queue {
     public int[] queue;
     
         // always insert from rear and delete from front
-    
         public Queue(int n){
             this.front = -1;
             this.rear = -1;
@@ -26,8 +25,7 @@ public class Queue {
     
         // start adding with rear
         public int add(int data){
-            if (isFull()) {
-                System.out.println("Queue is Full");
+            if ((rear + 1) % size == front) {
                 return -1;
             }
             // queue khali thakle ekta cell add korbo, mane -1 theke 0 index e
@@ -35,39 +33,64 @@ public class Queue {
                 rear = front = 0;
             }
             else{
-                rear++;
+                rear = (rear + 1) % size;
             }
             return queue[rear] = data;
         }
 
-
-        //display queue
-        public void display(){
+        // start deleting from front
+        public int remove(){
             if (isEmpty()) {
                 System.out.println("Queue is Empty");
+                return -1;
             }
-            else{
-                for (int i = front; i <= rear; i++) {
-                    System.out.println(queue[i]);
-                }
-                
+            else if(front == rear){
+                front = rear = -1;
             }
+            else {
+                front = (front + 1) % size;
+            }
+            return queue[front];
         }
+
+
+        //display queue
+        // public void display() {
+        //     if (isEmpty()) {
+        //         System.out.println("Queue is Empty");
+        //     } else {
+        //         int i = front;
+        //         // Handle wrapping around by checking if front is before rear
+        //         while (i != rear) {
+        //             System.out.println(queue[i]);
+        //             i = (i + 1) % size; // Circular increment
+        //         }
+        //         System.out.println(queue[rear]); // Display the last element
+        //     }
+        // }
+        
     
     
     
     
         public static void main(String[] args) {
-            System.out.println("Hello");
             Queue q = new Queue(5);
-            System.out.println("Hello");
             q.add(1);
             q.add(2);
             q.add(3);
             q.add(4);
             q.add(5);
+            q.remove();
+            q.remove();
+            q.add(6);
+            q.add(7);
 
-            q.display();
+            for (int i = 0; i < q.size; i++) {
+                System.out.println("Index "+ i +": " +q.queue[i]);
+            }
+
+
+            // q.display();
             // how to show data from queue
     }
 }
