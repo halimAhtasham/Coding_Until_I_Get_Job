@@ -21,17 +21,20 @@ public class Queue {
         return rear == size - 1;
     }
 
+
+    // start adding with rear
     public int add(int data){
         if (isFull()) {
             System.out.println("Queue is Full");
             return -1;
         }
-
         // queue khali thakle ekta cell add korbo, mane -1 theke 0 index e
         else if (isEmpty()) {
             rear = front = 0;
         }
-        rear++;
+        else{
+            rear++;
+        }
         return queue[rear] = data;
     }
 
