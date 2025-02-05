@@ -18,5 +18,6 @@ public class LinearSearch {
                 System.out.println("Element found at index: " + i + "  Value: " + ls[i]);
             }
         }
+        in.close();
     }
 }
