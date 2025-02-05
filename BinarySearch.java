@@ -19,7 +19,7 @@ public class BinarySearch {
         int mid = -1;
 
         while (low <= high) {
-            mid = (low + high) / 2;
+            mid = low + (high - low) / 2; // To avoid overflow
             if (bs[mid] == key) {
                 System.out.println("Element found at index: " + mid + "  Value: " + bs[mid]);
                 
