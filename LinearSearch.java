@@ -12,7 +12,6 @@ public class LinearSearch {
         }
         System.out.println("Enter the search key: ");
         int key = in.nextInt();
-
         for (int i = 0; i < ls.length; i++) {
             if (ls[i] == key) {
                 System.out.println("Element found at index: " + i + "  Value: " + ls[i]);
