@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class BubbleSort {
     public int[] arr;
+
+    // constructor
     public BubbleSort(int n){
         arr = new int[n];
     }
