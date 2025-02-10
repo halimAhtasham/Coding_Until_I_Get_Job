@@ -15,6 +15,7 @@ public class SelectionSort {
         }
         // displayArray(arr);
         in.close();
+        
     }
     public static void selectionSort(int[] arr){
         int l = arr.length;
