@@ -11,6 +11,8 @@ public class Stack {
         stack = new int[n];
     }
 
+
+    // []
     public boolean isEmpty(){
         return top == -1;
     }
@@ -19,12 +21,13 @@ public class Stack {
         return top == size - 1;
     }
 
+    // add to the stack
     public int push(int data){
         if(isFull()){
             System.out.println("Stack is Full");
         }
 
-        return stack[++top] = data;
+        return stack[++top] = data; // if 5 , top  = 4
     }
 
     public int pop(){
@@ -32,7 +35,7 @@ public class Stack {
             System.out.println("Stack is Empty");
         }
 
-        return stack[top--];
+        return stack[top--]; // 3
     }
 
     public int peek(){
@@ -45,6 +48,8 @@ public class Stack {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter your stack size: ");
             int StackSize = sc.nextInt();
+
+            // stack object
             Stack s = new Stack(StackSize);
 
             while(true){
@@ -63,9 +68,9 @@ public class Stack {
 //            }
 //            s.pop();
 
-            System.out.println("Peek is : " + s.peek());
+            System.out.println("Top is : " + s.peek());
             System.out.println("Popping : " + s.pop());
-            System.out.println("Peek is : " + s.peek());
+            System.out.println("Top is : " + s.peek());
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
