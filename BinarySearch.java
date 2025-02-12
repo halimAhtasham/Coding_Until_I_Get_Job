@@ -19,8 +19,6 @@ public class BinarySearch {
         int mid = -1;
 
         while (low <= high) {
-
-            // 10 - 2+10/2=5 - 2+(10-2) / 2 = 5
             mid = low + (high - low) / 2; // To avoid overflow
             // mid = (low + high) / 2;
             if (bs[mid] == key) {
