@@ -13,7 +13,6 @@ public class BinarySearch {
 
         System.out.println("Enter the search key: ");
         int key = in.nextInt();
-
         int low = 0;
         int high = bs.length - 1;
         int mid = -1;
