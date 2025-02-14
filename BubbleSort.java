@@ -51,7 +51,6 @@ public class BubbleSort {
         }
         bs.DescendingBubbleSort();
         bs.display();
-
         // bubbleSortA(arr);
         // for (int i : arr) {
         //     System.out.print(" "+ i);
