@@ -16,7 +16,6 @@ public class SelectionSort {
         // displayArray(arr);
         in.close();
     }
-    
     public static void selectionSort(int[] arr){
         int l = arr.length;
         for (int i = 0; i < l-1; i++) {
