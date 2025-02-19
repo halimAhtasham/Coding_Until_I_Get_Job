@@ -11,7 +11,6 @@ public class Queue {
             this.size = n;
             this.queue = new int[n];
         }
-    
         // -1 mane khali array
         public boolean isEmpty(){
             return rear == -1 && front == -1;
