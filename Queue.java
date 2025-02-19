@@ -15,7 +15,7 @@ public class Queue {
         public boolean isEmpty(){
             return rear == -1 && front == -1;
         }
-    
+
         // rear diya value dei, so rear jodi (size - 1) hoy, tahole array full hoye geche
         // public boolean isFull(){
         //     return rear == size - 1;
