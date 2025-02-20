@@ -21,7 +21,7 @@ public class Queue {
         //     return rear == size - 1;
         // }
     
-    
+
         // start adding with rear
         public int add(int data){
             if ((rear + 1) % size == front) {
