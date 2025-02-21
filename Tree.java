@@ -16,7 +16,6 @@ class Tree {
             System.out.println(node + "->Root");
         else
             System.out.println(node + "->" + parent);
-
         // Using DFS
         for (int i = 0; i < adj.get(node).size(); i++)
             if (adj.get(node).get(i) != parent)
