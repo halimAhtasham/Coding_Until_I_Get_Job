@@ -31,7 +31,6 @@ class Tree {
 
         // pushing the root
         q.add(Root);
-
         // visit array to keep track of nodes that have been
         // visited
         int vis[] = new int[adj.size()];
