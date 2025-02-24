@@ -63,7 +63,6 @@ class Tree {
         for (int i = 1; i < adj.size(); i++)
             if (adj.get(i).size() == 1 && i != Root)
                 System.out.print(i + " ");
-
         System.out.println();
     }
 
