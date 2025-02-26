@@ -28,13 +28,11 @@ public class BinarySearch {
                     System.out.println("Element found at index: " + left + "  Value: " + bs[left]);
                     left--;
                 }
-
                 int right = mid + 1;
                 while (right < bs.length && bs[right] == key) {
                     System.out.println("Element found at index: " + right + "  Value: " + bs[right]);
                     right++;
                 }
-
                 break;
             }
             else if (bs[mid] < key) {
