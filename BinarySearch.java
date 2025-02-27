@@ -22,7 +22,6 @@ public class BinarySearch {
             // mid = (low + high) / 2;
             if (bs[mid] == key) {
                 System.out.println("Element found at index: " + mid + "  Value: " + bs[mid]);
-                
                 int left = mid - 1;
                 while (left >=0 && bs[left] == key) {
                     System.out.println("Element found at index: " + left + "  Value: " + bs[left]);
