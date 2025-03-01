@@ -10,7 +10,6 @@ public class BinarySearch {
         for (int i = 0; i < n; i++) {
             bs[i] = in.nextInt();
         }
-
         System.out.println("Enter the search key: ");
         int key = in.nextInt();
         int low = 0;
