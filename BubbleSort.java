@@ -34,7 +34,6 @@ public class BubbleSort {
         }
         return arr;
     }
-
     public void display(){
         for (int i : arr) {
             System.out.print(i+ "");
