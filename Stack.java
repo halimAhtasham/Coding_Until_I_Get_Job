@@ -67,7 +67,6 @@ public class Stack {
 //                System.out.println("Popping : " + s.pop());
 //            }
 //            s.pop();
-
             System.out.println("Top is : " + s.peek());
             System.out.println("Popping : " + s.pop());
             System.out.println("Top is : " + s.peek());
