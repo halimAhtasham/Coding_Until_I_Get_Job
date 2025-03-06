@@ -30,6 +30,7 @@ public class Queue {
             else if (isEmpty()) {
                 rear = front = 0;
             }
+            
             else{
                 rear = (rear + 1) % size;
             }
