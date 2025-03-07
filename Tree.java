@@ -1,4 +1,3 @@
-
 // java code for above approach
 import java.util.Queue;
 import java.util.LinkedList;
