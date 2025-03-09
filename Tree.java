@@ -9,7 +9,6 @@ class Tree {
     // Function to print the parent of each node
     public static void printParents(int node, Vector<Vector<Integer>> adj,
             int parent) {
-
         // current node is Root, thus, has no parent
         if (parent == 0)
             System.out.println(node + "->Root");
