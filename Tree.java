@@ -20,7 +20,6 @@ class Tree {
                 printParents(adj.get(node).get(i), adj,
                         node);
     }
-
     // Function to print the children of each node
     public static void printChildren(int Root, Vector<Vector<Integer>> adj) {
 
