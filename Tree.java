@@ -17,8 +17,7 @@ class Tree {
         // Using DFS
         for (int i = 0; i < adj.get(node).size(); i++)
             if (adj.get(node).get(i) != parent)
-                printParents(adj.get(node).get(i), adj,
-                        node);
+                printParents(adj.get(node).get(i), adj, node);
     }
     // Function to print the children of each node
     public static void printChildren(int Root, Vector<Vector<Integer>> adj) {
