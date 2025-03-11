@@ -21,7 +21,6 @@ class Tree {
     }
     // Function to print the children of each node
     public static void printChildren(int Root, Vector<Vector<Integer>> adj) {
-
         // Queue for the BFS
         Queue<Integer> q = new LinkedList<>();
 
