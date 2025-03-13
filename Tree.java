@@ -38,7 +38,6 @@ class Tree {
             q.remove();
             vis[node] = 1;
             System.out.print(node + "-> ");
-
             for (int i = 0; i < adj.get(node).size(); i++) {
                 if (vis[adj.get(node).get(i)] == 0) {
                     System.out.print(adj.get(node).get(i)+ " ");
