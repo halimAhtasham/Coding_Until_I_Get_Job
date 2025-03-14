@@ -63,7 +63,6 @@ class Tree {
     public static void printDegrees(int Root, Vector<Vector<Integer>> adj) {
         for (int i = 1; i < adj.size(); i++) {
             System.out.print(i + ": ");
-
             // Root has no parent, thus, its degree is
             // equal to the edges it is connected to
             if (i == Root)
