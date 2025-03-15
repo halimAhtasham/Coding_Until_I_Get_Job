@@ -77,7 +77,6 @@ class Tree {
 
         // Number of nodes
         int N = 7, Root = 1;
-
         // Adjacency list to store the tree
         Vector<Vector<Integer>> adj = new Vector<Vector<Integer>>();
         for (int i = 0; i < N + 1; i++) {
